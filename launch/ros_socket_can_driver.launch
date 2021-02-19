@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <arg name="ns" default="/vehicle"/>
+  <arg name="respawn" default="false"/>
+  <arg name="max_ch_num" default="1" />
+  <arg name="bitrate" default="500000" />
+  <arg name="virtual" default="true" />
+  <arg name="can_tx_setting" default="can_tx.yaml" />
+  <arg name="can_rx_setting" default="can_rx.yaml" />
+  <group ns="$(arg ns)">
+    <node pkg="ros_socket_can_driver" 
+    type="ros_socket_can_driver_node" 
+    name="ros_socket_can_driver" 
+    respawn="$(arg respawn)"
+    output="screen">
+      <param name="max_ch_num" value="$(arg max_ch_num)" />
+      <param name="bitrate" value="$(arg bitrate)" />
+      <param name="virtual" value="$(arg virtual)" />
+      <param name="can_tx_setting" value="$(arg can_tx_setting)" />
+      <param name="can_rx_setting" value="$(arg can_rx_setting)" />
+    </node>
+  </group>
+</launch>

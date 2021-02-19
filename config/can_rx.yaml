@@ -1,0 +1,5 @@
+- name: TEST_07B
+  channel: 0
+  can_id: 0x07B
+  can_dlc: 8
+  can_data: [0,0,0,0,0,0,0,0]

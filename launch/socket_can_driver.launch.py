@@ -10,9 +10,9 @@ def generate_launch_description():
         DeclareLaunchArgument('can_tx_config_path', default_value='can_tx_config.yaml'),  # 直接パラメータを定義
         DeclareLaunchArgument('can_rx_config_path', default_value='can_rx_config.yaml'),  # 直接パラメータを定義
         Node(
-            package='ros_kvaser_can_driver',
-            executable='kvaser_can_driver',
-            name='kvaser_can_driver',
+            package='ros_socket_can_driver',
+            executable='socket_can_driver',
+            name='socket_can_driver',
             output='screen',
             parameters=[
                 {'device_channel_num': LaunchConfiguration('device_channel_num')},  # パラメータ1の型を整数に変換

@@ -1,0 +1,25 @@
+can_rx_config:
+- device_channel: 0
+  can_id: 0x201
+  bypass_channel: 1
+- device_channel: 0
+  can_id: 0x202
+  bypass_channel: 1
+- device_channel: 0
+  can_id: 0x203
+  bypass_channel: 1
+- device_channel: 0
+  can_id: 0x204
+  bypass_channel: 1
+- device_channel: 1
+  can_id: 0x201
+  bypass_channel: 0
+- device_channel: 1
+  can_id: 0x202
+  bypass_channel: 0
+- device_channel: 1
+  can_id: 0x203
+  bypass_channel: 0
+- device_channel: 1
+  can_id: 0x204
+  bypass_channel: 0

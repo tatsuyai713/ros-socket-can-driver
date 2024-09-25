@@ -1,17 +1,28 @@
 <?xml version="1.0"?>
-<package>
+<package format="3">
   <name>ros_socket_can_driver</name>
   <version>0.0.0</version>
-  <description>Read and write CAN messages via Socket CAN</description>
-  <maintainer email="tatsuyai713@gmail.com">Tatsuya Ishikawa</maintainer>
-  <license>MIT License</license>
-  <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>rospy</build_depend>
+  <description>Package description</description>
+  <maintainer email="tatsuyai713@gmal.com">Maintainer</maintainer>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_depend>message_generation</build_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>std_msgs</run_depend>
-  <run_depend>message_runtime</run_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>ament_index_cpp</build_depend>
+
+  
+  <build_depend>rosidl_default_generators</build_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group> <!-- Interface group -->
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>yaml-cpp</exec_depend>
+  <exec_depend>ament_index_cpp</exec_depend>
+  <license>MIT License</license> <!-- License information -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>

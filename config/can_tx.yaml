@@ -1,5 +1,0 @@
-- name: TEST_100
-  channel: 2
-  can_id: 0x100
-  can_dlc: 8
-  can_data: [0,0,0,0,0,0,0,0]

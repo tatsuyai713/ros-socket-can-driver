@@ -19,7 +19,7 @@ SocketCanDriver::SocketCanDriver() : Node("socket_can_driver_node")
   this->get_parameter("can_tx_config_path", can_tx_config_path_);
   this->declare_parameter("can_rx_config_path", "can_rx_config.yaml");
   this->get_parameter("can_rx_config_path", can_rx_config_path_);
-  std::string package_path = ament_index_cpp::get_package_share_directory("ros_kvaser_can_driver");
+  std::string package_path = ament_index_cpp::get_package_share_directory("ros_socket_can_driver");
   can_tx_config_path_ = package_path + "/config/" + can_tx_config_path_;
   can_rx_config_path_ = package_path + "/config/" + can_rx_config_path_;
 

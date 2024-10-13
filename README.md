@@ -1,2 +1,2 @@
 # ros_socket_can_driver
-ROS Package for Socket CAN
+ROS 2 Package for Socket CAN
